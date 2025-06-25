@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <title>Приложения для работы со шлангами</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        :root {
+            --main-green: #4CAF50;
+            --light-green: #B2FF59;
+            --dark-green: #388E3C;
+            --accent: #FFEB3B;
+            --text: #222;
+            --footer-bg: #222;
+            --footer-text: #fff;
+        }
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, var(--light-green), var(--main-green));
+            color: var(--text);
+        }
+        header {
+            background: linear-gradient(90deg, var(--main-green), var(--dark-green));
+            color: white;
+            padding: 40px 0 30px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        section {
+            max-width: 700px;
+            margin: 50px auto 30px auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(76,175,80,0.13);
+            padding: 32px 24px;
+        }
+        section h2 {
+            color: var(--main-green);
+            margin-top: 0;
+            font-size: 2em;
+        }
+        .app-desc {
+            font-size: 1.1em;
+            margin: 16px 0 0 0;
+        }
+        .app-btn {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 12px 32px;
+            background: var(--main-green);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(76,175,80,0.12);
+        }
+        .app-btn:hover, .app-btn:focus {
+            background: var(--dark-green);
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(56,142,60,0.16);
+        }
+        footer {
+            background: var(--footer-bg);
+            color: var(--footer-text);
+            text-align: center;
+            padding: 24px 8px 14px 8px;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+            margin-top: 60px;
+        }
+        @media (max-width: 600px) {
+            section {
+                margin: 24px 6px;
+                padding: 18px 6px;
+            }
+            header h1 {
+                font-size: 1.5em;
+            }
+            .app-btn {
+                width: 100%;
+                padding: 12px 0;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <h1>Приложения для работы со шлангами</h1>
+        <nav>
+            <a href="#shlangi">Шланги</a>
+            <a href="#vybor-shlangov">Выбор шлангов</a>
+        </nav>
+    </header>
+
+    <!-- Секция Шланги -->
+    <section id="shlangi">
+        <h2>Шланги</h2>
+        <p class="app-desc">
+            Приложение «Шланги» предназначено для ведения электронного каталога садовых и поливочных шлангов. Оно позволяет удобно хранить подробную информацию о каждом шланге, включая длину, ширину, материал, гибкость, диаметр, вес, цвет, цену и количество. В приложении реализованы функции фильтрации, сортировки и редактирования данных, а также импорт и экспорт в формате Excel для удобного обмена информацией.
+        </p>
+        <a href="https://disk.yandex.ru/d/edGtBTtFF73WbA" target="_blank" class="app-btn">Скачать приложение «Шланги»</a>
+    </section>
+
+    <!-- Секция Выбор шлангов -->
+    <section id="vybor-shlangov">
+        <h2>Выбор шлангов</h2>
+        <p class="app-desc">
+            «Выбор шлангов» — это помощник для подбора оптимального шланга под конкретные задачи. Приложение анализирует параметры и требования пользователя и предлагает подходящие варианты из каталога. Оно помогает быстро ориентироваться в ассортименте, учитывая характеристики и условия эксплуатации, что облегчает правильный выбор и экономит время.
+        </p>
+        <a href="https://disk.yandex.ru/d/OmIN-L8r40QZqQ" target="_blank" class="app-btn">Скачать мобильное приложение «Выбор шлангов»</a>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        Разработчик: Ефименко Даниил &bull; Email: Falltyl800@gmail.com &bull; 2025<br />
+        Современный дизайн и удобный интерфейс для эффективной работы с каталогом шлангов.
+    </footer>
+</body>
+</html>
